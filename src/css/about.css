@@ -1,0 +1,168 @@
+/* 
+.about-image {
+  width: 100%;
+  height: 50vh;
+}
+
+.about-quote {
+  background-color: var(--primary);
+  color: var(--text) !important;
+  max-width: 90rem;
+  margin: 3rem auto;
+  padding: 0 7rem;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  border-radius: 0.5rem;
+}
+.about-quote h2 {
+  font-family: "Pacifico", cursive;
+}
+.quote-img {
+  color: var(--text);
+}
+.about-main-container {
+  padding-top: 2rem;
+  margin: auto;
+  max-width: 60vw;
+}
+.about-title {
+  display: block;
+  position: absolute;
+  background-color: rgba(43, 43, 43, 0.521);
+  max-width: 700px;
+  top: 20em;
+  left: 6rem;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  color:#fff;
+}
+.about-container {
+  display: flex;
+  width: 60%;
+  margin: 5rem auto;
+ 
+  padding: 20px;
+  justify-content: center;
+  
+  gap: 20px;
+}
+.ceo-img {
+  max-width: 20vw;
+  height: 100%;
+  border-radius: 10px;
+}
+.ceo-name {
+  color: var(--text);
+}
+.ceo-tag {
+  color: var(--primary);
+}
+.about-list {
+  list-style-type: disc;
+}
+.sec-container {
+  padding: 2rem 2rem;
+  border-radius: 1rem;
+  border: 0.2rem solid #14213d3d;
+  margin: 2rem 9rem;
+  margin-bottom: 3rem;
+}
+.what-title {
+  margin: 10px 0;
+  color: var(--text);
+}
+.what-para {
+  padding: 5px 20px;
+}
+
+.main-staff-div {
+  margin-bottom: 3rem;
+  padding: 2rem;
+}
+.staff-div {
+  display: block;
+  padding: 10px;
+}
+.staff-title {
+  text-align: center;
+  margin: 40px 0;
+  color: var(--text);
+}
+.staff-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  margin: auto;
+  grid-gap: 20px;
+  width: 20rem;
+}
+.staff-img {
+  max-width: 25rem;
+  height: 30vh;
+}
+.staff-detail {
+  display: block;
+  padding: 0 0 10px 0;
+  border-bottom: 2px solid #14213d3d;
+}
+.staff-name {
+  color: var(--primary);
+  text-align: center;
+}
+.staff-desig {
+  text-align: center;
+  color: black;
+}
+
+@media (max-width: 648px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+  }
+  .about-main-container {
+    max-width: 100vw;
+  }
+  .about-title {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin: 20px 10px;
+  }
+  .ceo-img {
+    max-width: 100%;
+    height: 100%;
+  }
+  .ceo-name {
+    text-align: center;
+    margin: 10px 0;
+  }
+  .ceo-tag {
+    text-align: center;
+    margin: 10px 0;
+  }
+  .about-quote {
+    padding: 20px 20px;
+    margin: 30px 10px;
+  }
+  .sec-container {
+    margin: auto;
+  }
+  .main-staff-div {
+    padding: 0;
+  }
+  .staff-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    margin: auto;
+    padding: 0;
+    grid-gap: 10px;
+  }
+  .staff-img {
+    width: 100%;
+    object-fit: cover;
+  }
+} */
