@@ -728,23 +728,25 @@ height: 220px;
 .mainText_button {
 
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 800;
   max-width: 15rem;
-  padding: .7rem 2.5rem;
+  padding: .6rem 2.5rem;
   border-radius: 20rem;
-  border: 1px solid var(--primary);
+  border: 2px solid var(--text);
   letter-spacing: 3px;
-  color: var(--text);
+  color: var(--primary);
   background-color: transparent;
-  transition: all .6s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 .mainText_button:hover {
-  /* background-color: #f3f2f294; */
-  color: var(--primary);
-  border: 1px solid var(--text);
+
+  color: var(--text);
+  border: 2px solid var(--primary);
 }
 .btn_arrow{
-  margin-bottom: -6px;
+position: relative;
+left: 8px;
+top: 0;
 }
 .slick_arrow {
   display: none !important;
@@ -1112,8 +1114,8 @@ input:focus {
 }
 .img_div {
   opacity: .85;
-  height: max(15rem);
-  margin: 50px 10px 10px 10px;
+  /* height: max(15rem); */
+  margin: 10px 10px 10px 10px;
   /* background-color: #1778f2; */
 }
 
@@ -1135,7 +1137,7 @@ input:focus {
   /* display: inline; */
   text-align: center;
   border-radius: 0 0 15px 15px ;
-  background-color: #979797;
+  background-color: #f1f1f16b;
   color: rgb(255, 255, 255);
   position: relative;
   /* left: 165px; */
@@ -1144,7 +1146,7 @@ input:focus {
 .star_title {
   color: var(--black);
   text-align: center;
-  padding: 15px;
+  padding: 10px;
 }
 
 @media (max-width: 840px) {

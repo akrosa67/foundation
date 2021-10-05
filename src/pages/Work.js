@@ -7,10 +7,10 @@ import {
   team,
   women,
   women1,
-  work1,
-  work2,
-  work3,
-  work4,
+  // work1,
+  // work2,
+  // work3,
+  // work4,
   workslideimg,
 } from "../asset/images";
 
@@ -89,41 +89,28 @@ function Work() {
         </div>
       </div>
       {/* Stars content */}
-      <h2 className={classes.star_title}>Stars on the Field</h2>
-      <div className={classes.start_container}>
+      <h2 className={classes.star_title}>Team</h2>
+      {/* <div className={classes.start_container}> */}
         <div className={classes.img_div}>
           <img src={team} className={classes.main_str_img} alt="" />
-          <div className={classes.text_main}>
-            <h1>Our Team</h1>
-          </div>
         </div>
-        <div className={classes.sub_img}>
-          <div className={classes.img_div}>
-            <img src={work1} className={classes.star_img} alt="" />
-            <div className={classes.text}>
-              <h2>Moria Lubomirski</h2>
+        {/* <div className={classes.sub_img}>
+        <div className={classes.staff_div}>
+              <img
+                src={work1}
+                className={classes.staff_img}
+                alt='aa'
+              />
+              <div className={classes.staff_detail}>
+                <h3 className={classes.staff_name}>
+                Moria Lubomirski
+                </h3>
+                <p className={classes.staff_desig}>Lubomirski</p>
+              </div>
             </div>
-          </div>
-          <div className={classes.img_div}>
-            <img src={work2} className={classes.star_img} alt="" />
-            <div className={classes.text}>
-              <h2>Marion Tyreman</h2>
-            </div>
-          </div>
-          <div className={classes.img_div}>
-            <img src={work3} className={classes.star_img} alt="" />
-            <div className={classes.text}>
-              <h2>Zulema Brookzie</h2>
-            </div>
-          </div>
-          <div className={classes.img_div}>
-            <img src={work4} className={classes.star_img} alt="" />
-            <div className={classes.text}>
-              <h2>Leonard Sirr</h2>
-            </div>
-          </div>
-        </div>
-      </div>
+          
+        </div> */}
+      {/* </div> */}
     </div>
   );
 }

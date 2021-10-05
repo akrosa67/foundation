@@ -4,13 +4,12 @@ import Slider from "react-animated-slider";
 import "react-animated-slider/build/horizontal.css";
 import "normalize.css/normalize.css";
 import classes from "../css/FoundationStyles.module.css";
-import { BsArrowDown } from "react-icons/bs";
+import { HiChevronDown } from "react-icons/hi";
 import Reveal from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 import img1 from "../img/imgs/corona2.jpg";
 import img2 from "../img/imgs/pic2.jpg";
 import img3 from "../img/imgs/pic3.jpg";
-
 
 const customAnimation = keyframes`
   from {
@@ -43,17 +42,15 @@ const Slide = () => {
     },
     {
       title: "WHO WE ARE",
-      description:
-        "She has a dream.You could help her realise it.",
+      description: "She has a dream.You could help her realise it.",
       image: img2,
     },
     {
       title: "orphan care initiative",
       description:
-        "Lead Foundation provides Food,Education,Shelter to the Orphan kids.", 
+        "Lead Foundation provides Food,Education,Shelter to the Orphan kids.",
       image: img3,
     },
-
   ];
 
   const scroll = () => {
@@ -66,36 +63,33 @@ const Slide = () => {
   };
 
   return (
+    <Slider className="slider-wrapper" autoplay={2000}>
+      {content.map((item, index) => (
+        <div
+          key={index}
+          className="slider-content"
+          style={{ backgroundImage: `url(${item.image})` }}
+        >
+          {/* <img className={classes.image_slide} src={item.image} alt={item.title} /> */}
+          <div className="inner">
+            <Reveal keyframes={customAnimation} delay={500}>
+              <p>{item.title}</p>
+            </Reveal>
+            <Reveal keyframes={customAnimation2} delay={500}>
+              <h3>{item.description}</h3>
 
-      <Slider className="slider-wrapper" autoplay={2000}>
-        {content.map((item, index) => (
-          <div
-            key={index}
-            className="slider-content"
-            style={{ backgroundImage: `url(${item.image})` }}
-          >
-            {/* <img className={classes.image_slide} src={item.image} alt={item.title} /> */}
-            <div className="inner">
-              <Reveal keyframes={customAnimation} delay={500}>
-                <p>{item.title}</p>
-              </Reveal>
-              <Reveal keyframes={customAnimation2} delay={500}>
-                <h3>{item.description}</h3>
-
-                <button
-                  onClick={() => scroll()}
-                  
-                  className={classes.mainText_button}
-                >
-                  EXPLORE
-                  <BsArrowDown className={classes.btn_arrow} size="1.5rem" />
-                </button>
-              </Reveal>
-            </div>
+              <button
+                onClick={() => scroll()}
+                className={classes.mainText_button}
+              >
+                EXPLORE
+                <HiChevronDown className={classes.btn_arrow} size="1.5rem" />
+              </button>
+            </Reveal>
           </div>
-        ))}
-      </Slider> 
- 
+        </div>
+      ))}
+    </Slider>
   );
 };
 

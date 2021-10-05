@@ -1,8 +1,6 @@
 import React from "react";
 import classes from "../../css/FoundationStyles.module.css";
 import { Typography, makeStyles } from "@material-ui/core";
-import { styled } from "@material-ui/core/styles";
-import { Fade } from "react-awesome-reveal";
 import { adopt, avatar, ceoimg, plant } from "../../asset/images";
 import Reveal from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
@@ -17,16 +15,16 @@ const customAnimation = keyframes`
     opacity: 1;
     transform: translate3d(0, 0, 0);
   }`;
-const customAnimation2 = keyframes`
-  from {
-    opacity: 0;
-    transform: translate3d(0, 50px, 0);
-  }
+// const customAnimation2 = keyframes`
+//   from {
+//     opacity: 0;
+//     transform: translate3d(0, 50px, 0);
+//   }
 
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }`;
+//   to {
+//     opacity: 1;
+//     transform: translate3d(0, 0, 0);
+//   }`;
 
 const useclasses = makeStyles((theme) => ({
   cardGrid: {
@@ -50,11 +48,11 @@ const useclasses = makeStyles((theme) => ({
 }));
 export const MainAbout = () => {
   const cs = useclasses();
-  const Img = styled("img")({
-    margin: "auto",
-    display: "block",
-    maxWidth: "30%",
-  });
+  // const Img = styled("img")({
+  //   margin: "auto",
+  //   display: "block",
+  //   maxWidth: "30%",
+  // });
 
   return (
     <div className={classes.dddiv}>

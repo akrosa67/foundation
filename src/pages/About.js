@@ -1,4 +1,4 @@
-import React, { Profiler } from "react";
+import React from "react";
 import { useEffect } from "react";
 import classes from "../css/FoundationStyles.module.css";
 import { Fade } from "react-awesome-reveal";
@@ -23,7 +23,6 @@ import {
   CardContent,
   Typography,
   makeStyles,
-  useTheme,
 } from "@material-ui/core";
 import Sliderimg from "../components/Sliderimg";
 
@@ -162,7 +161,6 @@ const profile = [
 
 function About() {
   const cs = useClasses();
-  const theme = useTheme();
   useEffect(() => window.scrollTo(0, 0), []);
   return (
     <div>

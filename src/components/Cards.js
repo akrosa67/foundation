@@ -2,16 +2,17 @@ import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../css/card.css";
-import {
-  Card,
-  CardContent,
-  CardMedia,
-  Typography,
-  CardActionArea,
-  Grid,
-} from "@material-ui/core";
+// import {
+//   Card,
+//   CardContent,
+//   CardMedia,
+//   Typography,
+//   CardActionArea,
+//   Grid,
+// } from "@material-ui/core";
 import { card1, card2, card3 } from "../asset/images";
-import { makeStyles } from "@material-ui/core";
+import { makeStyles, Typography } from "@material-ui/core";
+import { Card,Button, Container, Row, Col } from "react-bootstrap";
 
 const useclasses = makeStyles((theme) => ({
   cardGrid: {
@@ -84,7 +85,8 @@ const Cards = () => {
 
   return (
     <>
-      <Typography
+
+    <Typography
         variant="h3"
         align="center"
         gutterBottom
@@ -92,7 +94,25 @@ const Cards = () => {
       >
         Recent
       </Typography>
-      <Grid container spacing={0} justify="center">
+      <Container fluid>
+        <Row className="justify-content-center">
+{card.map((value)=>(
+
+      <Card key={value.id} style={{ width: '19rem'}}>
+  <Card.Img variant="top"  style={{ width: '100%',height:"15rem",objectFit:'cover' }} src={value.image} />
+  <Card.Body>
+    <Card.Title>{value.cardHeading}</Card.Title>
+    <Card.Text>
+      {value.description}
+    </Card.Text>
+
+  </Card.Body>
+</Card>
+
+))}
+</Row>
+</Container>
+     {/*    <Grid container spacing={0} justify="center">
         {card.map((cardValue) => (
           <Grid
             className={classes.cardGrid}
@@ -133,7 +153,7 @@ const Cards = () => {
             </Card>
           </Grid>
         ))}
-      </Grid>
+      </Grid> */}
     </>
   );
 };

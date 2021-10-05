@@ -2,7 +2,7 @@ import React from "react";
 import Sliderimg from '../components/Sliderimg'
 import { slideimg } from '../asset/images'
 import Form from "../components/Form";
-import classes from "../css/FoundationStyles.module.css";
+
 
 function Contact() {
   return (
